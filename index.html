@@ -31,7 +31,7 @@ any indentation or breaks
 <h2>Text flair</h2>
 <p>to bold text we use the tag <strong>&ltstrong&gt</strong> it not only bolds text but defines it as an important element. The tag <b>&ltb&gt</b> also bolds text</p>
 <p><strong>&ltem&gt</strong> makes text italic and emphasizes said text.</p>
-<h3>list</h3>
+<h2>list</h2>
 <p>to create a list that is unordered we use parent object <b>&ltul&gt</b> with child object <b>&ltli&gt</b></p>
     <ul>
         <li>unordered</li>
@@ -53,6 +53,34 @@ any indentation or breaks
                 <li>list</li>
             </ul>
     </ul>
+    <ol>
+        <li>this</li>
+        <li>is</li>
+        <li>a</li>
+            <ol>
+                <li>ordered</li>
+                <li>nested</li>
+                <li>list</li>
+            </ol>
+    </ol>
 </p>
+<h2>Linking element</h2>
+<p>To create a link in html to another page or website we use <b>&lta&gt</b> known as an achor element, followed by a href element. ie <b>&lta href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a"&gt</b> </p>
+<p> This is an achor element for more info on said tag <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a" target="_blank" rel="noopener noreferrer"> <b>Anchor reference</b>  </a> </p>
+
+<p>When using an achor tag it will open a link in the same window. To open a link in a new tab we add the attribute <b>target="_blank"</b></p>
+<ul>
+    <li>Further attributes can be added to the anchor tag <b>rel</b>. <b>rel</b> is the relation to the current page and the linked page. For security purposes using <b>rel="noopener noreferrer"</b> prevents the anchored link from referencing the web page and knowing where the link comes from.  </li>
+</ul>
+<h3>Absolute and relative links</h3>
+<p><b>Absolute links</b> are links that are domains or other websites like <b>https://youtube.com</b> </p>
+<p><b>Relative links</b> are links to other pages within the website and use the href title of the html file like <b>about.html</b> <a href="./pages/about.html">about page</a></p>
+<h3>Images</h3>
+<p>the tag <b>&ltimg&gt</b> is the tag for images to be displayed.</p> 
+<p>like the anchor tag it also needs a reference known as a <b>src=</b> the source can be a link to an image or it could be in house using a directory.</p>
+<p>The image tag has an attribute that has a description of an image when it can not be loaded. <b>alt="description here"</b> </p>
+<p>The image tag has another attribute for its display size <b>height="" and width=""</b> setting only one of the attributes will scale the image accordingly.</p>
+<img src="./pages/images/img_tag_descr.png" alt="img tag attributes" height="100">
+
 </body>
 </html>
